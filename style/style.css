@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-purple: #160F29;
+    --ming: #246A73;
+    --dark-cyan: #368F8B;
+    --champagne: #F3DFC1;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    letter-spacing: 1px;
+    scroll-behavior:smooth;
+}
+
+body {
+    background-color: var(--champagne);
+    color: #f2f2f2;
+}
+
+header {
+    background-color: var(--dark-cyan);
+    display: grid;
+    place-items: center;
+    height: 14vh;
+    z-index: 5;
+}
+
+
+footer {
+    background-color: var(--dark-purple);
+    height: 21vh;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.box {
+    background: linear-gradient(to bottom, #368F8B, #2a6e6b, #1c4947);
+    width: 20rem;
+    height: 15rem;
+    padding: 1.4em;
+    border-radius: 1em;
+    font-size: 16pt;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%),url('../media/annie-spratt-S7viz8JWxwY-unsplash.jpg');
+    height: 42vh;
+    background-position-y: 1000px;
+    display: flex;
+    box-shadow: 0px 2px 10px var(--dark-purple);
+    z-index: 4;
+}
+
+.banner div {
+    flex: 1;
+}
+
+.end {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 100%),url('../media/noah-buscher-x8ZStukS2PM-unsplash.jpg');
+    height: 56vh;
+    background-position-y: 700px;
+    display: grid;
+    place-items: center;
+}
+
+.end p {
+    transition: ease-in 1s;
+}
+
+p {
+    padding: 1.5em 5.5em;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-big {
+    font-size: 30pt;
+}
+
+a {
+    color: var(--champagne);
+    transition-duration: .1s;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: var(--champagne);
+    color: var(--dark-purple);
+}
